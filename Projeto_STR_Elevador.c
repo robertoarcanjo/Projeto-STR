@@ -198,14 +198,14 @@ void* thread_gerador_usuarios(void* arg) {
 
         double tempo_espera = 1.0 / taxa_chegada;  // Tempo de espera entre usuários
 
-        // Garante que o tempo de espera esteja entre 1 e 10 segundos
-        if (tempo_espera < 1.0) {
-            tempo_espera = 1.0;
+        // Garante que o tempo de espera esteja entre 0.1 e 10 segundos
+        if (tempo_espera < 0) {
+            tempo_espera = 0.1;
         } else if (tempo_espera > 10.0) {
             tempo_espera = 10.0;
         }
         //DEBUGprintf("Próximo usuário em %.2f segundos.\n", tempo_espera);
-        sleep((int)tempo_espera);  // Converte para inteiro e espera
+        usleep(tempo_espera);
 
     
         static double tempo_decorrido = 0;
