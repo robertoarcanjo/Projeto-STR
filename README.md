@@ -79,6 +79,10 @@ A seguir temos um exemplo da saída esperada do seu sistema.
 
 [Elevador] Nenhuma chamada pendente. Retornando ao modo de espera.
 
+# Vídeo de apresentação
+
+[Link para o vídeo no YouTube](https://www.youtube.com/watch?v=GRmsM8l9Q2U)
+
 # Versão do sistema operacional
 
 Este projeto foi desenvolvido e testado em um sistema operacional Linux, versão Ubuntu 20.04.
